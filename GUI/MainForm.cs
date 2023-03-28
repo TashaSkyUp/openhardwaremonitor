@@ -304,19 +304,22 @@ namespace OpenHardwareMonitor.GUI {
         settings);
       loggingInterval.Changed += (sender, e) => {
         switch (loggingInterval.Value) {
-          case 0: logger.LoggingInterval = new TimeSpan(0, 0, 1); break;
-          case 1: logger.LoggingInterval = new TimeSpan(0, 0, 2); break;
-          case 2: logger.LoggingInterval = new TimeSpan(0, 0, 5); break;
-          case 3: logger.LoggingInterval = new TimeSpan(0, 0, 10); break;
-          case 4: logger.LoggingInterval = new TimeSpan(0, 0, 30); break;
-          case 5: logger.LoggingInterval = new TimeSpan(0, 1, 0); break;
-          case 6: logger.LoggingInterval = new TimeSpan(0, 2, 0); break;
-          case 7: logger.LoggingInterval = new TimeSpan(0, 5, 0); break;
-          case 8: logger.LoggingInterval = new TimeSpan(0, 10, 0); break;
-          case 9: logger.LoggingInterval = new TimeSpan(0, 30, 0); break;
-          case 10: logger.LoggingInterval = new TimeSpan(1, 0, 0); break;
-          case 11: logger.LoggingInterval = new TimeSpan(2, 0, 0); break;
-          case 12: logger.LoggingInterval = new TimeSpan(6, 0, 0); break;
+          case 1: logger.LoggingInterval = new TimeSpan(0, 0, 0.10); break;
+          case 2: logger.LoggingInterval = new TimeSpan(0, 0, 0.25); break;
+          case 3: logger.LoggingInterval = new TimeSpan(0, 0, 0.50); break;
+          case 4: logger.LoggingInterval = new TimeSpan(0, 0, 1); break;
+          case 5: logger.LoggingInterval = new TimeSpan(0, 0, 2); break;
+          case 6: logger.LoggingInterval = new TimeSpan(0, 0, 5); break;
+          case 7: logger.LoggingInterval = new TimeSpan(0, 0, 10); break;
+          case 8: logger.LoggingInterval = new TimeSpan(0, 0, 30); break;
+          case 9: logger.LoggingInterval = new TimeSpan(0, 1, 0); break;
+          case 10: logger.LoggingInterval = new TimeSpan(0, 2, 0); break;
+          case 11: logger.LoggingInterval = new TimeSpan(0, 5, 0); break;
+          case 12: logger.LoggingInterval = new TimeSpan(0, 10, 0); break;
+          case 13: logger.LoggingInterval = new TimeSpan(0, 30, 0); break;
+          case 14: logger.LoggingInterval = new TimeSpan(1, 0, 0); break;
+          case 15: logger.LoggingInterval = new TimeSpan(2, 0, 0); break;
+          case 16: logger.LoggingInterval = new TimeSpan(6, 0, 0); break;
         }
       };
 
